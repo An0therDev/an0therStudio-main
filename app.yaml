@@ -1,0 +1,15 @@
+application: a0c1-mainsite
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+
+- url: /stylesheets
+  static_dir: stylesheets
+  
+- url: /imgs
+  static_dir: imgs
+
+- url: /.*
+  script: main.php
